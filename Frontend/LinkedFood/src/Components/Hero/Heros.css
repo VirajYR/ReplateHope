@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+  }
+  
+  .Hero {
+    height: 75vh;
+    background: url("../../assets/banner.webp") no-repeat center/cover;
+    position: relative;
+  }
+  
+  .logo {
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+    margin-top: 20px;
+  }
+  
+  .logo img {
+    width: 100px;
+  }
+  
+  .cards {
+    margin-top: 50vh;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px; /* Add spacing between cards */
+    padding: 0 20px;
+  }
+  
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 300px;
+    width: 250px; /* Wider cards for better visibility */
+    cursor: pointer;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+  }
+  
+  .card.active {
+    transform: scale(1.1); /* Increase size for active card */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Highlight active card */
+  }
+  
+  .cardLeft h1 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .cardLeft p {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .cardLeft span {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #ddd;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .cardRight img {
+    width: 80px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card.active .cardRight img {
+    transform: scale(1.2); /* Slightly enlarge image in active card */
+  }
+  
+  .PantryCard {
+    background-color: rgb(1, 30, 65);
+  }
+  
+  .DonateCard {
+    background-color: rgb(74, 30, 24);
+  }
+  
+  .VolunteerCard {
+    background-color: rgb(59, 69, 54);
+  }
+  
+  .ShopCard {
+    background-color: rgb(33, 56, 89);
+  }
+  

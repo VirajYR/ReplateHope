@@ -1,0 +1,81 @@
+/* ChatApp.css */
+.chat-container {
+    width: 400px; /* Set a width for the chat */
+    height: 500px; /* Set a fixed height for the chat */
+    border: 1px solid #e0e0e0; /* Light border */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    background-color: #ffffff; /* White background */
+}
+
+.chat-header {
+    background-color: #4A90E2; /* Header color */
+    color: white; /* Header text color */
+    padding: 16px;
+    text-align: center; /* Center the text */
+}
+
+.chat-title {
+    margin: 0; /* Remove default margin */
+    font-size: 1.5rem; /* Title font size */
+}
+
+.chat-messages {
+    flex-grow: 1; /* Allow messages to grow */
+    padding: 16px; /* Padding inside the messages area */
+    overflow-y: auto; /* Scrollable area for messages */
+    background-color: #f9f9f9; /* Light background for messages */
+}
+
+.message {
+    margin: 8px 0; /* Margin between messages */
+    padding: 10px; /* Padding inside message */
+    border-radius: 8px; /* Rounded corners */
+    max-width: 70%; /* Limit width of message */
+}
+
+.user {
+    background-color: #d1ecf1; /* User message background */
+    align-self: flex-end; /* Align user messages to the right */
+}
+
+.organization {
+    background-color: #c3e6cb; /* Organization message background */
+    align-self: flex-start; /* Align organization messages to the left */
+}
+
+.message-text {
+    font-size: 1rem; /* Font size for message text */
+}
+
+.chat-input {
+    display: flex; /* Flexbox for input and button */
+    padding: 10px; /* Padding inside input area */
+    border-top: 1px solid #e0e0e0; /* Border on top */
+    background-color: #ffffff; /* Input area background */
+}
+
+.input-field {
+    flex-grow: 1; /* Allow input field to grow */
+    padding: 10px; /* Padding inside input */
+    border: 1px solid #e0e0e0; /* Border for input */
+    border-radius: 5px; /* Rounded corners */
+    margin-right: 10px; /* Margin to separate from button */
+}
+
+.send-button {
+    background-color: #4A90E2; /* Button color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding for button */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+.send-button:hover {
+    background-color: #357ABD; /* Darker blue on hover */
+}

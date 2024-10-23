@@ -1,0 +1,45 @@
+.volunteer-card {
+    width: 50%; /* Adjust the width as needed */
+    height: 50vh; /* Maintain height */
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    display: flex; /* Ensure content is side-by-side */
+    flex-direction: row; /* Horizontal layout for image and text */
+    overflow: hidden; /* Hide overflow to maintain clean look */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .volunteer-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .volunteer-card img {
+    width: 50%; /* Image takes half of the card */
+    height: 100%; /* Full height of the card */
+    object-fit: cover;
+  }
+  
+  .volunteer-card-content {
+    width: 50%; /* Content takes the other half */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+  
+  .volunteer-card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .volunteer-card-description {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
